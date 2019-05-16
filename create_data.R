@@ -4,3 +4,5 @@ dat = data.frame(USUBJID = 1:1000,
                  GLD = rbinom(n = 1000, size = 1, prob = 0.5))
 
 save(dat, file = "data/data_test.RData")
+
+devtools::use_data(dat)
