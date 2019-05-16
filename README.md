@@ -1,4 +1,4 @@
 # sidr
 
 This package show you how usefull if R langage.
-This is a toolbox for statistics.
+This is a toolbox for statistical analysis.
