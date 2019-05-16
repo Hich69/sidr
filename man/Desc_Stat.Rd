@@ -15,12 +15,15 @@ Desc_Stat(x, digits = 2, percdigs = 1)
 \arguments{
   \item{x}{
 %%     ~~Describe \code{x} here~~
+x vector to be analyzed
 }
   \item{digits}{
 %%     ~~Describe \code{digits} here~~
+digits number of digits
 }
   \item{percdigs}{
 %%     ~~Describe \code{percdigs} here~~
+percdigs number of digits for a percentage
 }
 }
 \details{

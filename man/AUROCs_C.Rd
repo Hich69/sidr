@@ -15,21 +15,27 @@ AUROCs_C(test1, goldstandard1, cutOff1, test2, goldstandard2, cutOff2 = NULL)
 \arguments{
   \item{test1}{
 %%     ~~Describe \code{test1} here~~
+test1 predictor1
 }
   \item{goldstandard1}{
 %%     ~~Describe \code{goldstandard1} here~~
+goldstandard1 gold standard 1
 }
   \item{cutOff1}{
 %%     ~~Describe \code{cutOff1} here~~
+cutOff1 cut-off1
 }
   \item{test2}{
 %%     ~~Describe \code{test2} here~~
+test1 predictor1
 }
   \item{goldstandard2}{
 %%     ~~Describe \code{goldstandard2} here~~
+goldstandard1 gold standard 1
 }
   \item{cutOff2}{
 %%     ~~Describe \code{cutOff2} here~~
+cutOff2 cut-off2
 }
 }
 \details{

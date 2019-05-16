@@ -15,9 +15,11 @@ Summarize(x, addtotal = TRUE)
 \arguments{
   \item{x}{
 %%     ~~Describe \code{x} here~~
+x vector to be analysed
 }
   \item{addtotal}{
 %%     ~~Describe \code{addtotal} here~~
+addTotal bool value
 }
 }
 \details{
