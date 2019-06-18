@@ -36,7 +36,7 @@ addTotal bool value
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Hecham AZRAK
 }
 \note{
 %%  ~~further notes~~
@@ -48,37 +48,9 @@ addTotal bool value
 %% ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \examples{
-##---- Should be DIRECTLY executable !! ----
-##-- ==>  Define data, use random,
-##--	or do  help(data=index)  for the standard data sets.
+data(data_test)
+Summarize(data_test$VALUE)
 
-## The function is currently defined as
-function (x, addtotal = TRUE)
-{
-    if (is.character(x) | is.factor(x)) {
-        if (is.character(x))
-            x <- factor(x)
-        tab <- table(x)
-        tabPercentage <- prop.table(tab) * 100
-        tab <- rbind(tab, tabPercentage)
-        if (isTRUE(addtotal)) {
-            tab <- cbind(tab, Total = rowSums(tab))
-        }
-        RES <- t(tab)
-        colnames(RES) <- c("freq", "perc")
-    }
-    else {
-        res <- quantile(x = x, na.rm = TRUE)
-        RES <- data.frame(n = length(x), nvalid = length(x[!is.na(x)]),
-            mean = mean(x = x, na.rm = TRUE), sd = sd(x = x,
-                na.rm = TRUE), min = res["0\%"], Q1 = res["25\%"],
-            median = res["50\%"], Q3 = res["75\%"], max = res["100\%"],
-            stringsAsFactors = FALSE)
-    }
-    return(RES)
-  }
-}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+\keyword{ data }% use one of  RShowDoc("KEYWORDS")
