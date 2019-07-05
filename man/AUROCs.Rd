@@ -15,12 +15,16 @@ AUROCs(test, goldstandard, cutOff)
 \arguments{
   \item{test}{
 %%     ~~Describe \code{test} here~~
+Variable to test
 }
   \item{goldstandard}{
 %%     ~~Describe \code{goldstandard} here~~
+the reference should be binary
 }
   \item{cutOff}{
 %%     ~~Describe \code{cutOff} here~~
+youden : maximizing the sum of sensitivity and specificity - 1
+da : Diagnostic accuracy
 }
 }
 \details{
